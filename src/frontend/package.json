@@ -1,0 +1,22 @@
+{
+  "name": "ssafy-2024-frontend",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve index.html",
+    "build": "parcel build index.html --public-url .",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gh-pages": "^6.2.0",
+    "parcel": "^2.13.3"
+  },
+  "homepage": "https://sonseohy.github.io/ai-frontend",
+  "dependencies": {
+    "marked": "^15.0.4"
+  }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Shopper</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body class="h-screen flex flex-col bg-gray-50">
+
+    <!-- Header -->
+    <header class="p-4 bg-white flex items-center justify-between shadow-lg w-full">
+        <div class="logo" id="logo">
+            <span>Smart</span> Shopper
+        </div>
+        <span class="subtitle">Powered by Parcel & Tailwind</span>
+    </header>
+
+    <!-- Main chat area -->
+    <div class="chat-container-wrapper">
+        <main id="chat-container" class="chat-scroll">
+            <div class="chat-content">
+                <div class="initial-message" id="initial-message">
+                    안녕하세요. <br /> 쇼핑 도우미 <strong>Smart Shopper</strong>입니다.<br />
+                    무엇을 도와드릴까요?
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Input area -->
+    <footer class="border-t border-gray-300 bg-white p-4">
+        <form id="message-form" class="flex items-center space-x-2">
+            <div class="input-container">
+                <textarea id="user-input" rows="1" placeholder="질문을 입력하세요..." required></textarea>
+                <button type="submit" class="send-icon"></button>
+            </div>
+        </form>
+    </footer>
+
+    <script type="module" src="./src/app.js"></script>
+</body>
+
+</html>
